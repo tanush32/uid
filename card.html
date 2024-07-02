@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CARD HOVER</title>
+    <style>
+       
+body{
+   
+    height: 100vh;
+    background: white;
+    overflow: hidden;
+    font-family: sans-serif;
+    color:rgb(211,211,211) ;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.containerfour{
+    width: 350px;
+    height: 500px;
+    perspective: 800px; 
+
+}
+.cardfour{
+    height: 100%;
+    width: 100%;
+    position: relative;
+    transition: transform 1500ms;
+    transform-style: preserve-3d;
+
+}
+.containerfour:hover >.cardfour{
+    cursor: pointer;
+    transform: rotateY(180deg);
+}
+.frontfour,.backfour{
+    height: 100%;
+    width: 100%;
+    border-radius: 2rem;
+    box-shadow: 0 0 5px 2px rgba(50,50,50,0.25);
+    position: absolute;
+    backface-visibility: hidden;
+}
+.frontfour{
+    background-image: url(ce.jpg);
+    background-position: Center;
+    background-repeat: no-repeat;
+   
+    background-size: cover;
+    
+}
+.backfour{
+    background-color: black;
+    transform:rotateY(180deg) ;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5rem;
+
+}
+.abc{
+    display: flex;
+    flex-direction: row;
+    gap: 150px;
+}
+    </style>
+</head>
+<body>
+    <div class="abc" >
+   <div class="containerfour">
+    <div class="cardfour">
+        <div class="frontfour" style="background-image: url(ce.jpg); height: 500px;width: 350px;" ></div>
+        <div class="backfour">
+           <p style="font-size: 20px;padding: 15px;">"I went from 106kg to losing 16kg in 16 weeks naturally. Thanks to Aesthetic Hoods, I achieved my fitness goals, felt better about my body, and saw weekly progress that motivated me to work harder. It's worth it!"</p>
+        </div>
+        
+    </div>
+   </div>
+
+
+   <div class="containerfour">
+    <div class="cardfour">
+        <div class="frontfour" style="background-image: url(ch.jpg); height: 500px;width: 350px;" ></div>
+        <div class="backfour">
+          <p style="font-size: 20px;padding: 15px;">"Being a part of Aesthetic hood's body recomposition program brought me immense joy. I lost 20kg naturally, without fat burners. It was a transformative experience with customized diet plans."</p>
+        </div>
+        
+    </div>
+   </div>
+
+   <div class="containerfour">
+    <div class="cardfour">
+        <div class="frontfour" style="background-image: url(hc.jpg); height: 500px;width: 350px;" ></div>
+        <div class="backfour">
+          <p style="font-size: 20px;padding: 15px;">"The Aesthetic Hosod bulking transformation program changed my life. I gained 10kg, transformed from lean to muscular, and enjoyed delicious food and exciting workout challenges."</p>
+        </div>
+        
+    </div>
+   </div>
+</div>
+   
+</body>
+</html>
